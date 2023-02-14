@@ -54,7 +54,7 @@ Lors du premier lancement du script, il est important de suivre les étapes l'un
 
 Dans le terminal ayant servi à l'activation de l'environnement virtuel, exécuter la commande : 
 
-`scrape.py`
+`python scrape.py`
 
 # Output
 Une fois l'exécution du script terminée, les informations recueillies sont sauvegardées dans un dossier propre à chaque site de revendeur visité (uniquement http://books.toscrape.com/ dans l'état, enregistrer dans le dossier : "BookToScrape").
