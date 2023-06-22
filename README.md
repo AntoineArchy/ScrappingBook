@@ -1,12 +1,12 @@
 # Présentation
-Le but de l'exercice est d'écrire une version béta d'un script destiné à extraire et convertir les informations de reventes des produits proposé par diverses librairies en ligne. Le site utilisé pour l'exercice est "http://books.toscrape.com/" (fictif). 
+Le but de l'exercice est d'écrire une version béta d'un script destiné à extraire et convertir les informations de revente des produits proposés par diverses librairies en ligne. Le site utilisé pour l'exercice est "http://books.toscrape.com/" (fictif). 
 
 # Fonctionnement 
-Le script se connecte à l'URL principale du site, créer un objet python "OnlineLibrary" et extrait les URLs des différentes catégories de livres.
+Le script se connecte à l'URL principale du site, crée un objet python "OnlineLibrary" et extrait les URLs des différentes catégories de livres.
 
 Ensuite, chaque page de catégories est visitée afin d'en faire un objet python "Category" avant d'extraire les URLs des livres de cette catégorie.
 
-Une fois les URLs individuels extrait, chaque page est visitée afin de convertir les informations présentes sur les URLs de chaque livre en un objet python "Book". 
+Une fois les URLs individuels extraits, chaque page est visitée afin de convertir les informations présentes sur les URLs de chaque livre en un objet python "Book". 
 
 Les informations extraites sont alors sauvegardées au format CSV (Détails des livres) et JPG (Couverture des livres).
 
@@ -14,13 +14,13 @@ Les informations extraites sont alors sauvegardées au format CSV (Détails des 
 ## 1) Creer l'environnement virtuel
 Ouvrez un terminal; 
 
-Pour ouvrir un terminal sur Windows, pressez  touche windows + r et entrez cmd.
+Pour ouvrir un terminal sur Windows, pressez  les touches windows + r et entrez cmd.
 
-Sur Mac, pressez touche command + espace et entrez "terminal".
+Sur Mac, pressez les touches command + espace et entrez "terminal".
 
 Sur Linux, vous pouvez ouvrir un terminal en pressant les touches Ctrl + Alt + T.
 
-Placez-vous dans le dossier où vous souhaitez créer l'environnement (Pour plus de facilité aux étapes suivantes, il est recommandé de faire cette opération dans le dossier contenant le script à exécuté). Puis exécutez  à présent la commande : 
+Placez-vous dans le dossier où vous souhaitez créer l'environnement (Pour plus de facilité aux étapes suivantes, il est recommandé de faire cette opération dans le dossier contenant le script à exécuter). Puis exécutez  à présent la commande : 
 
 `python -m venv env
 `
@@ -50,7 +50,7 @@ Dans le même terminal qu'à l'étape précédente :
 `pip install -r requirements.txt`
 
 ## 4) Executer le programme
-Lors du premier lancement du script, il est important de suivre les étapes l'une après l'autre. Lors des exécutions suivantes, il est possible de réutiliser l'environnement créer précédemment. Pour ce faire, ne suivez que l'étape 2 (Activer l'environnement virtuel), vous pouvez alors simplement contrôler que les dépendances sont bien installées via la commande : `pip freeze`. Si toutes les dépendances sont bien présentes, il est possible de passer directement à l'exécution du script.
+Lors du premier lancement du script, il est important de suivre les étapes l'une après l'autre. Lors des exécutions suivantes, il est possible de réutiliser l'environnement créé précédemment. Pour ce faire, ne suivez que l'étape 2 (Activer l'environnement virtuel), vous pouvez alors simplement contrôler que les dépendances sont bien installées via la commande : `pip freeze`. Si toutes les dépendances sont bien présentes, il est possible de passer directement à l'exécution du script.
 
 Dans le terminal ayant servi à l'activation de l'environnement virtuel, exécuter la commande : 
 
@@ -61,5 +61,5 @@ Une fois l'exécution du script terminée, les informations recueillies sont sau
 
 Ce dossier est organisé de façon à obtenir : 
 
-* Un fichier csv par catégories, contenant les informations de chacun des livres présent dans la catégorie.
-* Un dossier "book_cover" comprenant un sous dossier par catégories, reprennant les images de couvertures de chacun des livres présents dans cette catégorie.
+* Un fichier csv par catégorie, contenant les informations de chacun des livres présents dans la catégorie.
+* Un dossier "book_cover" comprenant un sous dossier par catégorie, reprennant les images de couverture de chacun des livres présents dans cette catégorie.
